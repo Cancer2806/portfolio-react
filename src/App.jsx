@@ -6,6 +6,7 @@ import Projects from './components/Projects';
 import Resume from './components/Resume';
 import Footer from './components/Footer'
 import logo from './logo.svg';
+import './reset.css';
 import './App.css';
 
 

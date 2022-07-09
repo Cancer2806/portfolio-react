@@ -1,4 +1,13 @@
 import React from 'react'
+import Screenshot_Launch from '../assets/images/Screenshot_Launch.png'
+import CitySelect from '../assets/images/CitySelect.png'
+import ViewVBlogLoggedIn from '../assets/images/ViewVBlogLoggedIn.png'
+import eCommerceViewProducts from '../assets/images/eCommerceViewProducts.png'
+import ViewEmployees from '../assets/images/ViewEmployees.png'
+import QuestionScreen from '../assets/images/QuestionScreen.png'
+import OpeningPage from '../assets/images/OpeningPage.png'
+import PasswordGeneratorScreenshot from '../assets/images/PasswordGeneratorScreenshot.png'
+
 
 const Projects = () => {
   return (
@@ -12,7 +21,7 @@ const Projects = () => {
             <p>Collaborative project. Provides a market place for Users to share original content</p>
           </article>
           <figure className="projpic">
-            <img src="./assets/images/Screenshot_Launch.png" alt="Bookboard Launch Screen" title="Bookboard" />
+            <img src={Screenshot_Launch} alt="Bookboard Launch Screen" title="Bookboard" />
             <figcaption className="caption">Launch Screen</figcaption>
           </figure>
         </a>
@@ -23,7 +32,7 @@ const Projects = () => {
             <p>Team project. User selects a city and is provided with information about the city and things to do while they there</p>
           </article>
           <figure className="projpic">
-            <img src="./assets/images/CitySelect.png" alt="City Guide Screen" title="City Guide"/>
+            <img src={CitySelect} alt="City Guide Screen" title="City Guide"/>
             <figcaption className="caption">City Guide Screenshot</figcaption>
           </figure>
         </a>
@@ -34,7 +43,7 @@ const Projects = () => {
             <p>Provides a place where Users can share and comment on Blog entries</p>
           </article>
           <figure className="projpic">
-            <img src="./assets/images/ViewVBlogLoggedIn.png" alt="Bookboard Launch" title="Tech Blog"/>
+            <img src={ViewVBlogLoggedIn} alt="Bookboard Launch" title="Tech Blog"/>
             <figcaption className="caption">View a Blog Entry</figcaption>
           </figure>
         </a>
@@ -45,7 +54,7 @@ const Projects = () => {
             <p>Provides the backend access to a mysql database, including creating and seeding of the database</p>
           </article>
           <figure className="projpic">
-            <img src="./assets/images/eCommerceViewProducts.png" alt="View Products" title="eCommerce Backend"/>
+            <img src={eCommerceViewProducts} alt="View Products" title="eCommerce Backend"/>
             <figcaption className="caption">eCommerce Backend:  View Products</figcaption>
           </figure>
         </a>
@@ -56,7 +65,7 @@ const Projects = () => {
             <p>The application provides access to an SQL employee database via the terminal CLI.</p>
           </article>
           <figure className="projpic">
-            <img src="./assets/images/ViewEmployees.png" alt="View Employees" title="Employee Tracker"/>
+            <img src={ViewEmployees} alt="View Employees" title="Employee Tracker"/>
             <figcaption className="caption">View Employees (SQL Database)</figcaption>
           </figure>
         </a> 
@@ -89,7 +98,7 @@ const Projects = () => {
             <p>Timed JS Quiz with scores stored locally</p>
           </article>
           <figure className="projpic">
-            <img src="./assets/images/QuestionScreen.png" alt="JS Quiz Screenshot" title="JS Quiz"/>
+            <img src={QuestionScreen} alt="JS Quiz Screenshot" title="JS Quiz"/>
             <figcaption className="caption">JS Quiz Question page</figcaption>
           </figure>
         </a>
@@ -100,7 +109,7 @@ const Projects = () => {
             <p>Provides a simple To Do list to plan your Day.  Uses local storage so that list items persist until cleared</p>
           </article>
           <figure className="projpic">
-            <img src="./assets/images/OpeningPage.png" alt="Daily Planner"
+            <img src={OpeningPage} alt="Daily Planner"
               title="Daily Planner"/>
             <figcaption className="caption">Daily Planner</figcaption>
           </figure>
@@ -112,7 +121,7 @@ const Projects = () => {
             <p>Generates a secure password bounded by the parameters provided</p>
           </article>
           <figure className="projpic">
-            <img src="./assets/images/PasswordGeneratorScreenshot.png" alt="Password Generator Screenshot" title="Password Generator"/>
+            <img src={PasswordGeneratorScreenshot} alt="Password Generator Screenshot" title="Password Generator"/>
             <figcaption className="caption">Password Generator</figcaption>
           </figure>
         </a> 

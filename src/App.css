@@ -1,3 +1,291 @@
+/* Universal selectors and Variable setting */
+:root {
+  --colbg: rgb(211, 211, 211);
+  --colfont: rgb(0, 0, 139);
+  --colheadbg: rgb(169, 169, 169);
+  --colhead: rgb(0, 0, 255);
+  --colborder: rgb(0, 0, 139);
+  --bordersz: 2px;
+  --initfontsz: 16px;
+}
+
+/* Element selectors */
+body {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--initfontsz);
+  background-color: var(--colbg);
+}
+
+h1 {
+  font-size: 250%;
+  margin-right: 2%;
+  z-index: 8
+}
+
+h2 {
+  font-size: 200%;
+}
+
+h3 {
+  font-size: 175%;
+}
+
+h4 {
+  font-size: 90%;
+}
+
+p {
+  font-size: 100%;
+}
+
+header,
+footer {
+  background-color: var(--colheadbg);
+  color: var(--colhead);
+}
+
+/* Fixed at top of page, complete with nav bar and profile image */
+header {
+  position: sticky;
+  top: 0;
+  margin: 0.5% 0.5% 0 0.5%;
+  text-align: right;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 9;
+}
+
+/* nav bar */
+nav {
+  margin-right: 2%;
+  z-index: 9
+}
+
+nav ul li {
+  display: inline;
+  padding: 0 2px 2px 0;
+  font-size: 1.1rem;
+}
+
+nav ul li:hover,
+nav ul li:focus {
+  text-decoration: underline;
+}
+
+/* to remove the lines under the nav bar items */
+nav [href*='#'] {
+  text-decoration: none;
+}
+
+/* Ensures anchor elements land below fixed header */
+section {
+  scroll-margin-top: 100px;
+  margin: 5px 0.5% 0.5% 0.5%;
+  padding: 0 0 10px 0;
+  border-bottom: var(--bordersz) solid var(--colborder);
+}
+
+section h2 {
+  text-align: center;
+  color: var(--colfont);
+}
+
+footer {
+  margin: 5px 0.5% 0.5% 0;
+  padding: 5px 0 5px 5px;
+  text-align: center;
+}
+
+/* Class selectors */
+/* hero image */
+.hero {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 200px;
+  margin: 0px 2px 2px 0.5%;
+  background-image: url("./assets/images/Hero.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero h2 {
+  position: absolute;
+  right: 2%;
+  bottom: 15%;
+  background-color: rgba(211, 211, 211, 0.4);
+  color: var(--colfont);
+}
+
+/* set of work cards */
+.projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+/* parameters for each card */
+.projcard {
+  border: 5px solid rgb(158, 156, 156);
+  position: relative;
+  flex: 1 0 100%;
+  margin: 2px 2px;
+  /* reduce image chatter when resizing */
+  transition: flex-basis 500ms linear;
+}
+
+.cardtitle {
+  position: absolute;
+  text-align: center;
+  border: 1px dotted blue;
+  top: 45%;
+  height: auto;
+  left: 5%;
+  max-height: 40%;
+  max-width: 45%;
+  font-size: 75%;
+  padding: 2%;
+  background-color: var(--colbg);
+  opacity: 80%;
+}
+
+.cardtitle p {
+  padding: 3% 0 0 0;
+}
+
+.projpic img {
+  width: 100%;
+  height: auto;
+}
+
+/* figcaption is included for accessibility, but not shown on screen */
+.caption {
+  position: absolute;
+  visibility: hidden;
+}
+
+/* ID selectors */
+#container {
+  display: flex;
+}
+
+/* Profile Avatar */
+#aboutme img {
+  width: 10%;
+  height: auto;
+  max-height: 100%;
+  padding-right: 10px;
+}
+
+#contact ul li {
+  font-size: 100%;
+  padding: 2px 0;
+}
+
+#resume {
+  font-size: .65rem;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Screen size greater than 768px targeting tablets */
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 280%;
+  }
+
+  nav ul li {
+    padding-right: 5px;
+    font-size: 1.5rem;
+  }
+
+  section {
+    display: flex;
+    flex-direction: row;
+    scroll-margin-top: 105px;
+  }
+
+  section h2 {
+    box-sizing: border-box;
+    text-align: right;
+    min-width: 20%;
+    border-right: var(--bordersz) solid var(--colborder);
+    margin-right: 10px;
+    padding-right: 10px;
+  }
+
+  .hero {
+    min-height: 300px;
+  }
+
+  .projcard {
+    flex: 1 0 30%;
+    max-width: 50%;
+    min-width: 45%;
+    height: auto;
+  }
+
+  .cardtitle {
+    max-height: 80%;
+    max-width: 50%;
+  }
+
+  /* make the first project double size on larger screens */
+  .mainproject {
+    flex: 1 0 200%;
+    min-width: 100%;
+  }
+
+  #resume {
+    padding: 0 0 5px 0;
+  }
+
+  #resume h4,
+  p {
+    margin: auto 0;
+    padding-right: 50px;
+  }
+}
+
+/* Screen size greater than 992px targeting computers and laptops */
+@media screen and (min-width: 992px) {
+  header {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  /* reinstate underline on larger screens */
+  nav [href*='#'] {
+    text-decoration: underline;
+  }
+
+  .hero {
+    min-height: 350px;
+  }
+
+  .cardtitle {
+    max-width: 40%;
+  }
+
+  #contact ul {
+    margin: auto 0;
+  }
+
+  #contact ul li {
+    display: inline;
+    font-size: 120%;
+    padding: 2px 50px 0 0;
+  }
+}
+
+/* Legacy css */
 .App {
   text-align: center;
 }
