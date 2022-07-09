@@ -16,9 +16,9 @@ The flagship project is presented in a larger format than the other projects.  I
 
 
 ## Usage
-The webpage is located at this address:  https://github.com/Cancer2806/portfolio-react
+The code repository is located on GitHub at:  https://github.com/Cancer2806/portfolio-react
 
-The page is deployed at: https://cancer2806.github.io/portfolio-react/
+The page is deployed using gh-pages at: https://cancer2806.github.io/portfolio-react/
 
 
 ![Application Screenshot](./src/assets/images/PortfolioScreenshot.png)
