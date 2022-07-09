@@ -4,6 +4,8 @@ import CitySelect from '../assets/images/CitySelect.png'
 import ViewVBlogLoggedIn from '../assets/images/ViewVBlogLoggedIn.png'
 import eCommerceViewProducts from '../assets/images/eCommerceViewProducts.png'
 import ViewEmployees from '../assets/images/ViewEmployees.png'
+import NoteTakerEntry from '../assets/images/NoteTakerEntry.png'
+import WeatherDashboardScreenshot_2 from '../assets/images/WeatherDashboardScreenshot_2.png'
 import QuestionScreen from '../assets/images/QuestionScreen.png'
 import OpeningPage from '../assets/images/OpeningPage.png'
 import PasswordGeneratorScreenshot from '../assets/images/PasswordGeneratorScreenshot.png'
@@ -76,7 +78,7 @@ const Projects = () => {
             <p>The application allows a User to write and save notes so that they can keep track of tasks and thoughts</p>
           </article>
           <figure className="projpic">
-            <img src="./assets/images/NoteTakerEntry.png" alt="View and Enter Notes" title="Note Taker Main Screen"/>
+            <img src={NoteTakerEntry} alt="View and Enter Notes" title="Note Taker Main Screen"/>
             <figcaption className="caption">Note Taker Main Screen</figcaption>
           </figure>
         </a> 
@@ -87,7 +89,7 @@ const Projects = () => {
             <p>Obtains weather information about the selected city via API and presents to the User</p>
           </article>
           <figure className="projpic">
-            <img src="./assets/images/WeatherDashboardScreenshot_2.png" alt="Weather Dashboard" title="Weather Dashboard"/>
+            <img src={WeatherDashboardScreenshot_2} alt="Weather Dashboard" title="Weather Dashboard"/>
             <figcaption className="caption">Weather Forecast</figcaption>
           </figure>
         </a>
