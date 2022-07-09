@@ -170,6 +170,71 @@ footer {
   visibility: hidden;
 }
 
+/* Form classes */
+.add-form {
+  margin-bottom: 40px;
+}
+
+.form-control {
+  margin: 20px 0;
+}
+
+.form-control label {
+  display: block;
+}
+
+.form-control input {
+  width: 100%;
+  height: 40px;
+  margin: 5px;
+  padding: 3px 7px;
+  font-size: 17px;
+}
+
+.form-control-check {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-control-check label {
+  flex: 1;
+}
+
+.form-control-check input {
+  flex: 2;
+  height: 20px;
+}
+
+/* button styling */
+.btn {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+
 /* ID selectors */
 #container {
   display: flex;
@@ -177,7 +242,7 @@ footer {
 
 /* Profile Avatar */
 #aboutme img {
-  width: 10%;
+  width: 20%;
   height: auto;
   max-height: 100%;
   padding-right: 10px;
@@ -192,6 +257,12 @@ footer {
   font-size: .65rem;
   text-align: center;
   padding: 10px;
+}
+
+#footer {
+  display: flex;
+  /* align-content: center; */
+  justify-content: center;
 }
 
 /* Screen size greater than 768px targeting tablets */
@@ -253,6 +324,10 @@ footer {
   }
 }
 
+#footer {
+  display: inline;
+}
+
 /* Screen size greater than 992px targeting computers and laptops */
 @media screen and (min-width: 992px) {
   header {
@@ -286,7 +361,7 @@ footer {
 }
 
 /* Legacy css */
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -323,4 +398,4 @@ footer {
   to {
     transform: rotate(360deg);
   }
-}
+} */

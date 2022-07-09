@@ -14,7 +14,7 @@ import PasswordGeneratorScreenshot from '../assets/images/PasswordGeneratorScree
 const Projects = () => {
   return (
     <section id="work">
-      <h2>Projects</h2>
+      <h2>Portfolio</h2>
       {/* add project cards whenever a good opportunity presents */}
       <article className="projects">
         <a className="projcard mainproject" href="https://bookboardsite.herokuapp.com/" target="blank">

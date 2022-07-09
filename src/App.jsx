@@ -2,28 +2,32 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Header from './components/Header';
 import Hero from './components/Hero';
-import Projects1 from './components/Projects1';
+import Projects from './components/Projects';
 import Resume from './components/Resume';
 import Footer from './components/Footer'
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './reset.css';
 import './App.css';
 
+const getEmail = (emailData) => {
+  console.log('now Im here');
+  console.log(emailData);
+};
 
 function App() {
   return (
-    <body>
+    <>
       <Header />
       <Hero />
       
       <main>
         <About />
-        <Projects1 />
-        <Contact />
+        <Projects />
+        <Contact onEmail={getEmail} />
         <Resume />
       </main>
       <Footer />
-    </body>
+    </>
     
     
     // <div className="App">
