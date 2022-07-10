@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
+import { validateEmail } from '../utils/helpers';
 
 const Contact = ({ onEmail }) => {
   const [name, setName] = useState('');
@@ -8,11 +9,10 @@ const Contact = ({ onEmail }) => {
 
   const onSubmit = (event) => {
     event.preventDefault();
-    if (!name || !email) {
-      alert('Please enter your name and email address')
+    if (!name || !validateEmail(email)) {
+      alert('Please enter your name and valid email address')
       return
     }
-    // TODO Email Validation
     onEmail({ name, email, message })
 
     // clear the form
@@ -48,13 +48,6 @@ const Contact = ({ onEmail }) => {
         </div>
         <input type='submit' value='Send' className='btn btn-block' />
       </form>
-
-      {/* <ul>
-        <li><strong>Phone:  </strong>+61 472 808 657</li>
-        <li><strong>Email:  </strong>frank.lavery@westnet.com.au</li>
-        <li><a href="https://github.com/Cancer2806" target="blank">Github</a></li>
-        <li><a href="https://www.linkedin.com/in/frank-lavery-94444239/" target="blank">LinkedIn</a></li>
-      </ul> */}
     </section>
   )
 }
