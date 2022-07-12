@@ -7,7 +7,7 @@ const Projects = () => {
   return (
     <section id="work">
       <h2>Portfolio</h2>
-      
+
       {/* add projects through the ProjectData file whenever a good opportunity presents */}
       {/* Reformat cards to show both Project Title and Github repository */}
 
@@ -23,7 +23,8 @@ const Projects = () => {
               <p>Source of picture {project.image}</p>
             </article>
             <figure className="projpic" >
-              <img alt={project.alt} title={project.title} src={project.image} />
+             
+              <img alt={project.alt} title={project.title} src={`${process.env.PUBLIC_URL}${project.image}`} />
 
               {/* <img alt={project.alt} title={project.title} src={require('../assets/images/WeatherDashboardScreenshot_2.png')} /> */}
 

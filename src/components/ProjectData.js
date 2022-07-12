@@ -2,7 +2,7 @@ export const projectdata = [
   {
     title: "Bookboard",
     description: "Collaborative project. Provides a market place for Users to share original content",
-    image: "./assets/images/Screenshot_Launch.png",
+    image: "/assets/images/Screenshot_Launch.png",
     alt: "Bookboard Launch Screen",
     caption: "Launch Screen",
     deployed: "https://bookboardsite.herokuapp.com/",
@@ -11,7 +11,7 @@ export const projectdata = [
   {
     title: "City Guide",
     description: "Team project. User selects a city and is provided with information about the city and things to do while they there",
-    image: "../assets/images/CitySelect.png",
+    image: "/assets/images/CitySelect.png",
     alt: "City Guide Screen",
     caption: "City Guide Screenshot",
     deployed: "https://cancer2806.github.io/City-Guide-group-proj1-/",
@@ -20,7 +20,7 @@ export const projectdata = [
   {
     title: "Tech Blog",
     description: "Provides a place where Users can share and comment on Blog entries",
-    image: "../assets/images/ViewVBlogLoggedIn.png",
+    image: "/assets/images/ViewVBlogLoggedIn.png",
     alt: "Bookboard Launch",
     caption: "View a Blog Entry",
     deployed: "https://techblog021.herokuapp.com/",
@@ -29,7 +29,7 @@ export const projectdata = [
   {
     title: "eCommerce Backend",
     description: "Provides the backend access to a mysql database, including creating and seeding of the database",
-    image: "../assets/images/eCommerceViewProducts.png",
+    image: "/assets/images/eCommerceViewProducts.png",
     alt: "View Products",
     caption: "eCommerce Backend:  View Products",
     deployed: "https://drive.google.com/file/d/1RxJMRkA038veYHLueH4sVBAzuk4PUm8r/view?usp=sharing",
@@ -38,7 +38,7 @@ export const projectdata = [
   {
     title: "SQL Employee Tracker",
     description: "The application provides access to an SQL employee database via the terminal CLI.",
-    image: "../assets/images/ViewEmployees.png",
+    image: "/assets/images/ViewEmployees.png",
     alt: "View Employees",
     caption: "View Employees (SQL Database)",
     deployed: "https://drive.google.com/file/d/1w6b3L6KUtBGvBlQDnSrCKrh7tUpjXD4J/view?usp=sharing",
@@ -47,7 +47,7 @@ export const projectdata = [
   {
     title: "Note Taker",
     description: "The application allows a User to write and save notes so that they can keep track of tasks and thoughts",
-    image: "../assets/images/NoteTakerEntry.png",
+    image: "/assets/images/NoteTakerEntry.png",
     alt: "View and Enter Notes",
     caption: "Note Taker Main Screen",
     deployed: "https://notetaker021.herokuapp.com/",
@@ -56,7 +56,7 @@ export const projectdata = [
   {
     title: "Weather Dashboard",
     description: "Obtains weather information about the selected city via API and presents to the User",
-    image: "../assets/images/WeatherDashboardScreenshot_2.png",
+    image: "/assets/images/WeatherDashboardScreenshot_2.png",
     alt: "Weather Dashboard",
     caption: "Weather Forecast",
     deployed: "https://cancer2806.github.io/Weather-Guide/",
@@ -65,7 +65,7 @@ export const projectdata = [
   {
     title: "JavaScript Quiz",
     description: "Timed JS Quiz with scores stored locally",
-    image: "../assets/images/QuestionScreen.png",
+    image: "/assets/images/QuestionScreen.png",
     alt: "JS Quiz Screenshot",
     caption: "JS Quiz Question page",
     deployed: "https://cancer2806.github.io/Code-Quiz/",
@@ -74,7 +74,7 @@ export const projectdata = [
   {
     title: "Daily Planner",
     description: "Provides a simple To Do list to plan your Day.  Uses local storage so that list items persist until cleared",
-    image: "../assets/images/OpeningPage.png",
+    image: "/assets/images/OpeningPage.png",
     alt: "Daily Planner",
     caption: "Daily Planner",
     deployed: "https://cancer2806.github.io/Day-Planner/",
@@ -83,7 +83,7 @@ export const projectdata = [
   {
     title: "Passsword Generator",
     description: "Generates a secure password bounded by the parameters provided",
-    image: "../assets/images/PasswordGeneratorScreenshot.png",
+    image: "/assets/images/PasswordGeneratorScreenshot.png",
     alt: "Password Generator Screenshot",
     caption: "Password Generator",
     deployed: "https://cancer2806.github.io/Password-Generator/",
