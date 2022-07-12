@@ -23,13 +23,7 @@ const Projects = () => {
               <p>Source of picture {project.image}</p>
             </article>
             <figure className="projpic" >
-             
-              <img alt={project.alt} title={project.title} src={`${process.env.PUBLIC_URL}${project.image}`} />
-
-              {/* <img alt={project.alt} title={project.title} src={require('../assets/images/WeatherDashboardScreenshot_2.png')} /> */}
-
-              {/* <img alt={project.alt} title={project.title} src={require(`${project.image}`)} /> */}
-              
+              <img alt={project.alt} title={project.title} src={`${process.env.PUBLIC_URL}${project.image}`} />             
               <figcaption className="caption">{project.caption}</figcaption>
             </figure>
           </a>
